@@ -15,35 +15,35 @@ import tom from "../../assets/tom.png";
 import megan from "../../assets/megan.png";
 import cameron from "../../assets/cameron.png";
 
-const Sidebar = ({sidebar}) => {
+const Sidebar = ({sidebar, category, setCategory}) => {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${sidebar ? '' : 'small-sidebar'}`}>
       <div className="shortcut-links">
-        <div className="side-link">
+        <div className="side-link" onClick={() => setCategory(0)}>
           <img src={home} alt="Home" /> <p>Home</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" onClick={() => setCategory(0)}>
           <img src={game_icon} alt="Gaming" /> <p>Gaming</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" onClick={() => setCategory(0)}>
           <img src={automobiles} alt="Automobiles" /> <p>Automobiles</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" onClick={() => setCategory(0)}>
           <img src={sports} alt="Sports" /> <p>Sports</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" onClick={() => setCategory(0)}>
           <img src={entertainment} alt="Entertainment" /> <p>Entertainment</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" onClick={() => setCategory(0)}>
           <img src={tech} alt="Technology" /> <p>Technology</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" onClick={() => setCategory(0)}>
           <img src={music} alt="Music" /> <p>Music</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" onClick={() => setCategory(0)}>
           <img src={blogs} alt="Blogs" /> <p>Blogs</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" onClick={() => setCategory(0)}>
           <img src={news} alt="News" /> <p>News</p>
         </div>
         <hr />
